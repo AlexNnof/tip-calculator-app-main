@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { margin-top: 10%;}
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <img id="logo" src="./images/logo.svg" />
+  <main>
+    <div id="desktopOne">
+      <p>Bill</p>
+      <div class="inputContainer">
+        <img class="icon" src="./images/icon-dollar.svg" alt="a dollar symbol">
+        <input type="number" id="bill" onchange="setCustom()" placeholder="0">
+      </div><!--/inputContainer-->
+      <p>Select Tip %</p>
+      <div class="gridPercent">
+        <button id="five" class="percent" onclick="setFive()">5%</button>
+        <button id="ten"  class="percent" onclick="setTen()">10%</button>
+        <button id="fifteen"  class="percent" onclick="setFifteen()">15%</button>
+        <button id="twentyfive" class="percent" onclick="setTwentyfive()">25%</button>
+        <button id="fifty" class="percent" onclick="setFifty()">50%</button>
+        <input  id="custom" class="custom" onchange="setCustom()" onclick="setCustom()" type="number" placeholder="Custom" ></input>
+      </div> <!--/gridPercent-->
+      <p>Number of People</p>
+      <div class="inputContainer">
+        <img class="icon" src="./images/icon-person.svg" alt="a siluete of a man">
+        <input id="numbOfPeple" type="number" onchange="setCustom()" placeholder="0">
+      </div> <!--/inputContainer-->
+    </div> <!--/inputContainer-->
+    
+    <div id="gridSum">
+
+      <div id="textAmount">
+        <p>Tip Amount</p>
+        <h4>/ person</h4>
+      </div>
+
+      <h2 class="cash" id="tippAmaunt"></h2>
+
+      <div id="textTotal">
+        <p>Total</p>
+        <h4>/ person</h4>
+      </div>
+
+      <h2 class="cash" id="total">text</h2>
+
+      <button id="ressetButton" onclick="reset()">Reset</button>
+    </div> <!--/gridSum-->
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Alexander K Fonn</a>.
+    </div>
+
+  </main>
+  <script src="./index.js"></script>
+</body>
+</html>

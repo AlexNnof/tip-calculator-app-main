@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    background-color: hsl(185, 41%, 84%);
+    font-size: 24px;
+    color: hsl(186, 14%, 43%);
+    font-family: 'Space Mono', monospace;
+}
+#logo{
+    margin: 0 40%;
+}
+
+main{
+    padding: 3%;
+    background-color: hsl(189, 41%, 97%);
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+}
+
+p{
+    padding: 0;
+    margin: 7% 0;
+}
+.inputContainer{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 80%;
+    border: none;
+    text-align: end;
+    font-size: 24px;
+}
+.icon{
+    width: 6%;
+    margin: 0;
+    padding: 0;
+}
+h4{
+    padding: 0;
+    margin: 0;
+}
+
+.gridPercent{
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5% 8%;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+
+.percent{
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-family: inherit;
+    border-radius: 1%;
+    border: none;
+}
+
+.custom{
+    font-size: 24px;
+    width: 95%;
+    border: none;
+    text-align: center;
+}
+
+.percent{
+    width: 100%;
+    margin: auto;
+    font-size: 24px;
+    border-radius: 1%;
+}
+.percent:hover{
+    background-color: hsl(184, 14%, 56%);
+}
+
+#gridSum {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 10% 0px;
+    margin: 5% 0;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5%;
+    padding: 5%;
+  }
+  
+  #textAmount{
+    grid-column: 1 ;
+    grid-row: 1;
+    margin: 0;
+    padding: 0;
+  }
+  #tippAmaunt{
+    grid-column: 2 ;
+    grid-row:  1;
+    margin: 0;
+    padding: 0;
+  }
+  #textTotal{
+    grid-column: 1 ;
+    grid-row: 2;
+    margin: 0;
+    padding: 0;
+  }
+  .cash{
+    text-align: end;
+    color: hsl(172, 67%, 45%);
+  }
+  #ressetButton{
+    grid-column: span 2 ;
+    grid-row: 3;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(184, 14%, 56%);
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  @media only screen and (min-width: 768px)  {
+      main{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+      }
+      #desktopOne{
+          margin: 3%;
+          padding: 3%;
+      }
+  }
