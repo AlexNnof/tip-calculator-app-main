@@ -36,7 +36,7 @@ function setFive(){
     percentSting = 0.05
     percentNumb = parseFloat(percentSting)
     tip = billNumb * percentNumb / pepleNumb
-    sum = billNumb * 1.05 
+    sum = billNumb * 1.05 / pepleNumb
 
     addText()
 }
@@ -45,7 +45,7 @@ function setTen(){
     percentSting = 0.1
     percentNumb = parseFloat(percentSting)
     tip = billNumb * percentNumb / pepleNumb
-    sum = billNumb * 1.1
+    sum = billNumb * 1.1 / pepleNumb
 
     addText()
 }
@@ -54,7 +54,7 @@ function setFifteen(){
     percentSting = 0.15
     percentNumb = parseFloat(percentSting)
     tip = billNumb * percentNumb / pepleNumb
-    sum = billNumb * 1.15 
+    sum = billNumb * 1.15 / pepleNumb
 
     addText()
 }
@@ -63,7 +63,7 @@ function setTwentyfive(){
     percentSting = 0.25
     percentNumb = parseFloat(percentSting)
     tip = billNumb * percentNumb / pepleNumb
-    sum = billNumb * 1.25 
+    sum = billNumb * 1.25 / pepleNumb
 
     addText()
 }
@@ -72,7 +72,7 @@ function setFifty(){
     percentSting = 0.5
     percentNumb = parseFloat(percentSting)
     tip = billNumb * percentNumb / pepleNumb
-    sum = billNumb * 1.5
+    sum = billNumb * 1.5 / pepleNumb
 
     addText()
 }
@@ -84,7 +84,7 @@ function setCustom(){
     customValue += 1
     percentNumb = parseFloat(percentSting)
     tip = billNumb * percentNumb / pepleNumb
-    sum = billNumb * customValue
+    sum = billNumb * customValue / pepleNumb
 
     addText()
 }

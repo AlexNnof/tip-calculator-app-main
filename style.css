@@ -6,7 +6,7 @@ body{
     font-family: 'Space Mono', monospace;
 }
 #logo{
-    margin: 0 40%;
+    margin: 10% 40%;
 }
 
 main{
@@ -50,12 +50,15 @@ h4{
     justify-content: space-evenly;
     font-size: 24px;
 }
+input{
+    font-size: inherit;
+    font-family: inherit;
+}
 
 .percent{
     background-color: hsl(183, 100%, 15%);
     color: white;
     font-family: inherit;
-    border-radius: 1%;
     border: none;
 }
 
@@ -70,7 +73,8 @@ h4{
     width: 100%;
     margin: auto;
     font-size: 24px;
-    border-radius: 1%;
+    border-radius: 10%;
+    padding: 5%;
 }
 .percent:hover{
     background-color: hsl(184, 14%, 56%);
@@ -113,13 +117,20 @@ h4{
     grid-column: span 2 ;
     grid-row: 3;
     margin: 0;
-    padding: 0;
+    padding: 3%;
     background-color: hsl(184, 14%, 56%);
     font-family: 'Space Mono', monospace;
     font-size: 24px;
+    height: fit-content;
     font-weight: 700;
   }
   @media only screen and (min-width: 768px)  {
+      body{
+          margin: 10%;
+      }
+      #logo {
+          margin: 10% 45%;
+      }
       main{
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -127,5 +138,8 @@ h4{
       #desktopOne{
           margin: 3%;
           padding: 3%;
+      }
+      #ressetButton{
+          margin-top: 5%;
       }
   }
